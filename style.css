@@ -1,7 +1,7 @@
 :root {
     /* CORES */
     --cor-laranja: rgb(255, 102, 0);
-    --link-color: orangered;
+    --link-color: #F59425;
     --login-bg-color: rgba(250, 250, 250, 0.699);
     --fieldset-bg-color: rgba(0, 0, 0, 0.685);
     /* FONTES */    
@@ -11,21 +11,18 @@
     /*GERAL*/
     --margem: 0px auto;
     --geral-padding: 0px;
-    --imagem-fundo: url(favela-ver2.);
+    --imagem-fundo: url(favela-ver-5.png);
     --margem-fundo: 20px;
     /*EFEITOS*/
     --destaque-logo: drop-shadow(2px 2px 2px #000000);
     --sublinhado: underline;
     --destaque-caixa: 3px 3px 3px #000000;
     --destaque-border: 2px solid #000000;
+    --destaque-border-bottom: 3px solid #F59425;
     --destaque-circle-border: 10px;
     /*OUTROS*/
     --second-padding: 7px;
     --alinhamento-geral: center;
-
-
-
-
 }
 
 /* GERAL */
@@ -45,6 +42,10 @@ header img {
     width: 250px;
     height: 105px;
     filter: var(--destaque-logo);
+}
+
+header .project {
+    border-bottom: var(--destaque-border-bottom);
 }
 
 /* LINKS */
@@ -83,6 +84,13 @@ legend {
     background-color: var(--login-bg-color);
 }
 
-.campo_de_preenchimento {
+.campo_de_preenchimento{
     width: 210px;
+}
+
+.submit {
+    width: 220px;
+    padding: var(--second-padding);
+    background-color: var(--link-color);
+    font-weight: var(--estilo-fonte);
 }
